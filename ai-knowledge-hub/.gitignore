@@ -1,0 +1,68 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse / VSCode ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.vscode/
+
+### Mac / Windows ###
+.DS_Store
+Thumbs.db
+
+### 日志与临时文件 ###
+logs/
+*.log
+/uploads/
+
+### 敏感配置（重中之重）###
+application-local.yml
+.env
+*.key
