@@ -3,6 +3,7 @@ package com.demo.akh;
 import java.util.*;
 import java.util.stream.*;
 
+//在main分支上新增一条注释
 public class JavaWarmUp {
 
     record User(Long id, String name, Integer age, String dept) {}
