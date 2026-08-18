@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ai-knowledge-hub
+  profiles:
+    active: dev              # 开发时用 dev
+  servlet:
+    multipart:
+      max-file-size: 50MB    # 单文件最大
+      max-request-size: 100MB
+    encoding:
+      charset: UTF-8
+      force: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null   # null 字段不返回
+
+logging:
+  level:
+    root: info
+    com.demo.akh: debug
+    
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
