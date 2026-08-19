@@ -8,6 +8,19 @@ spring:
       minimum-idle: 5
       maximum-pool-size: 20
       connection-timeout: 30000
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-plus
+          temperature: 0.7
+          max-tokens: 2048
+      embedding:
+        options:
+          model: text-embedding-v3
+          dimensions: 1024
 
   data:
     redis:
